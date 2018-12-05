@@ -40,13 +40,6 @@ app.post("/checkout", function (req, res) {
     }
     sendNum(arr);
     res.send(sendNum(arr));
-    // loveWall.create(sum, function (err, docs) {
-    //     console.log(docs);
-    // })
-    // loveWall.find(function (err, docs) {
-    //     console.log(docs);
-    //     res.send(sendNum(arr));
-    // })
 })
 
 app.listen(3003, function () {
