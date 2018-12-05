@@ -8,7 +8,7 @@ app.all('*', function (req, res, next) {
     res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
 
     if (req.method == 'OPTIONS') {
-        res.send(200); 
+        res.send(200);
     }
     else {
         next();
@@ -36,10 +36,10 @@ app.post("/checkout", function (req, res) {
     arr[10] = '你非常的友好，待人热情。是狂热的"聚会动物"， 哪里有刺激和有趣的活动，就出现在哪里，乐于成为人们注目的焦点，并享受来自于此的仰慕、认可和恭维。红色性格的人以快乐为导向。红色的你宁愿在与客户共进午餐时唠嗑，也不愿呆在办公室中工作。';
 
     function sendNum(arr) {
-        return arr[Math.round(Math.random())]
+        return arr[Math.floor(Math.random() * 11)]
     }
     sendNum(arr);
-    res.send(sendNum(arr)); 
+    res.send(sendNum(arr));
 })
 
 app.listen(3002, function () {
