@@ -42,6 +42,6 @@ app.post("/checkout", function (req, res) {
     res.send(sendNum(arr)); 
 })
 
-app.listen(3003, function () {
+app.listen(3002, function () {
     console.log('服务器正在监听3003端口')
 })
