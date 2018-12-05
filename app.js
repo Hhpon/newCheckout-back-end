@@ -39,9 +39,9 @@ app.post("/checkout", function (req, res) {
         return arr[Math.round(Math.random())]
     }
     sendNum(arr);
-    res.send(sendNum(arr));
+    res.send(sendNum(arr)); 
 })
 
 app.listen(3003, function () {
-    console.log('服务器正在监听3000端口')
+    console.log('服务器正在监听3003端口')
 })
