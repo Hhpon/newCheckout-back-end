@@ -8,7 +8,7 @@ app.all('*', function (req, res, next) {
     res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
 
     if (req.method == 'OPTIONS') {
-        // res.send(200); /让options请求快速返回/
+        res.send(200); 
     }
     else {
         next();
@@ -43,5 +43,5 @@ app.post("/checkout", function (req, res) {
 })
 
 app.listen(3002, function () {
-    console.log('服务器正在监听3003端口')
+    console.log('服务器正在监听3002端口')
 })
