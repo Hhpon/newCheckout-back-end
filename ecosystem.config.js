@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name: 'test',
+    name: 'quiz',
     script: 'app.js',
     env: {
       NODE_ENV: 'development'
@@ -12,11 +12,11 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'dc2-user',
-      host : '117.51.158.69',
+      user : 'hhp',
+      host : '47.94.210.206',
       ref  : 'origin/master',
       repo : 'git@github.com:Hhpon/newCheckout-back-end.git',
-      path : '/home/dc2-user/www/lsj_test/production',
+      path : '/home/hhp/www/lsj_test/production',
       ssh_options: 'StrictHostKeyChecking=no',
       'post-deploy': 'npm install --registry=https://registry.npm.taobao.org && pm2 reload ecosystem.config.js --env production',
       env:{
